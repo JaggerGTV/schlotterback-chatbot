@@ -25,7 +25,7 @@ export default function ChatBox() {
         {messages
           .filter((m) => m.role !== "system")
           .map((m, i) => (
-            <div key={i} className={\`mb-2 \${m.role === "user" ? "text-right" : "text-left text-fuchsia-600"}\`}>
+          <div key={i} className={\`mb-2 \${m.role === "user" ? "text-right" : "text-left text-fuchsia-600"}\`}>
               <p><strong>{m.role === "user" ? "You" : "Schlotterback"}:</strong> {m.content}</p>
             </div>
           ))}
